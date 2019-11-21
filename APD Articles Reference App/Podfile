@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Citation Companion' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Citation Companion
+
+
+# add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
+pod 'Firebase/Core' 
+pod 'Firebase/MLVision' 
+pod 'Firebase/MLVisionTextModel' 
+
+# UI
+pod 'CropViewController'
+pod 'AlignedCollectionViewFlowLayout'
+pod 'RSLoadingView'
+pod 'paper-onboarding'
+pod 'CropViewController'
+pod 'MXParallaxHeader'
+pod 'SwiftEntryKit'
+pod 'EzPopup'
+
+pod 'SwiftyJSON', '~> 4.0'
+
+# for Article Summarizer 
+pod 'Reductio'
+pod 'FloatingPanel'
+pod 'SwiftSoup' 
+
+end
