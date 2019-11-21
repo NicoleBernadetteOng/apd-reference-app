@@ -1,5 +1,7 @@
 # APD Articles Reference App
 
+![App Screenshots](https://github.com/NicoleBernadetteOng/apd-articles-reference-app/blob/master/Images/screenshots1.png)
+
 ## Introduction
 The reason for this project is to solve, or minimise, the pain point faced by students and researchers; it is difficult to create citations. With that problem in mind, my supervisor wanted an application that can generate citations from the Digital Object Identifier (DOI) number of research papers.
 At first, the objective of the app was to be able to retrieve one citation from the one DOI number that was captured from the Optical Character Recognition (OCR feature). However, wanting to take the project a step further, several new objectives and features were added. 
@@ -19,7 +21,6 @@ The last feature is an abstract translator which has the ability to translate a 
 2. Researchers want to get citations from a whole list of DOI numbers - they can simply take a picture of that list and a list of citations will be generated for the user. 
 3. Students are in a hurry and don't have the patience to read a long text to make sure if it's relevant to their project - they can use the article summarizer to quickly see if it's what they want. Researchers can also do the same. 
 4. Foreign students can translate an abstract of text from English (or any Latin-based language) to their native language using OCR.
-
 
 
 ## Dependencies (Android), CocaPods (iOS), libraries, and APIs:
@@ -42,6 +43,7 @@ The last feature is an abstract translator which has the ability to translate a 
 - SwiftEntryKit
 - EzPopup
 
+![Article Summarizer Screenshots](https://github.com/NicoleBernadetteOng/apd-articles-reference-app/blob/master/Images/screenshots2.png)
 #### Article summarizer works on research article websites like: 
 - AAAS ScienceMag (https://science.sciencemag.org/) 
 - American Society for Microbiology (https://www.asm.org) 
