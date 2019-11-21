@@ -1,1 +1,2 @@
-# apd-articles-reference-app-mp
+# APD Articles Reference App
+Run pod install
