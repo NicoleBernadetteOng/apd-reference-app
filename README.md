@@ -21,57 +21,58 @@ The last feature is an abstract translator which has the ability to translate a 
 4. Foreign students can translate an abstract of text from English (or any Latin-based language) to their native language using OCR.
 
 
+
 ## Dependencies (Android), CocaPods (iOS), libraries, and APIs:
-•	AndroidSlidingUpPanel 
-•	JSoup 
-•	Apache OpenNLP 
-•	JGraphT 
-•	Firebase ML Kit 
-•	Yandex.Translate API 
-•	Crossref REST API and Citation Formatting Service 
-•	Reductio (Uses the TextRank algorithm)
-•	SwiftSoup 
-•	SwiftyJSON
-•	FloatingPanel
-•	AlignedCollectionViewFlowLayout
-•	RSLoadingView
-•	PaperOnboarding
-•	CropViewController 
-•	MXParallaxHeader
-•	SwiftEntryKit
-•	EzPopup
+- AndroidSlidingUpPanel 
+- JSoup 
+- Apache OpenNLP 
+- JGraphT 
+- Firebase ML Kit 
+- Yandex.Translate API 
+- Crossref REST API and Citation Formatting Service 
+- Reductio (Uses the TextRank algorithm)
+- SwiftSoup 
+- SwiftyJSON
+- FloatingPanel
+- AlignedCollectionViewFlowLayout
+- RSLoadingView
+- PaperOnboarding
+- CropViewController 
+- MXParallaxHeader
+- SwiftEntryKit
+- EzPopup
 
 #### Article summarizer works on research article websites like: 
-•	AAAS ScienceMag (https://science.sciencemag.org/) 
-•	American Society for Microbiology (https://www.asm.org) 
-•	arXiv (https://arxiv.org/)
-•	Aspet (https://www.aspet.org/)
-•	Bioscience Reports (http://www.bioscirep.org/)
-•	Cell (https://www.cell.com/cell) 
-•	BMC (https://www.biomedcentral.com/) 
-•	DOAJ (https://doaj.org/) 
-•	eLIFE (https://elifesciences.org/) 
-•	Elsevier Science Direct (https://www.sciencedirect.com/)
-•	Frontiers (https://www.frontiersin.org/)
-•	JBC Journal of Biological Chemistry (http://www.jbc.org/) 
-•	JNeurosci (https://www.jneurosci.org/)
-•	Life Sciences Education (https://www.lifescied.org/) 
-•	MDPI (https://www.mdpi.com/) 
-•	MIT Technology Review (https://www.technologyreview.com/) 
-•	MBoC Molecular Biology of the Cell (https://www.molbiolcell.org/)
-•	Nature (https://www.nature.com/) 
-•	Oxford Academic Journals (https://academic.oup.com/journals)
-•	Paperity (https://paperity.org/) 
-•	PLOS (https://www.plos.org/) 
-•	PNAS (https://www.pnas.org/) 
-•	Project Muse (https://muse.jhu.edu/)
-•	PubMed (https://www.ncbi.nlm.nih.gov/pubmed)
-•	ResearchGate (https://www.researchgate.net/press) 
-•	SAGE Journals (https://journals.sagepub.com/)
-•	ScienceOpen (https://www.scienceopen.com/)
-•	Springer (https://link.springer.com/)
-•	SSRN (https://www.ssrn.com/index.cfm/en/) 
-•	Taylor & Francis Online (https://www.tandfonline.com/)
-•	The New England Journal of Medicine (https://www.nejm.org/)
-•	Towards Data Science (https://towardsdatascience.com/) 
-•	Wiley Online Library (https://onlinelibrary.wiley.com/)
+- AAAS ScienceMag (https://science.sciencemag.org/) 
+- American Society for Microbiology (https://www.asm.org) 
+- arXiv (https://arxiv.org/)
+- Aspet (https://www.aspet.org/)
+- Bioscience Reports (http://www.bioscirep.org/)
+- Cell (https://www.cell.com/cell) 
+- BMC (https://www.biomedcentral.com/) 
+- DOAJ (https://doaj.org/) 
+- eLIFE (https://elifesciences.org/) 
+- Elsevier Science Direct (https://www.sciencedirect.com/)
+- Frontiers (https://www.frontiersin.org/)
+- JBC Journal of Biological Chemistry (http://www.jbc.org/) 
+- JNeurosci (https://www.jneurosci.org/)
+- Life Sciences Education (https://www.lifescied.org/) 
+- MDPI (https://www.mdpi.com/) 
+- MIT Technology Review (https://www.technologyreview.com/) 
+- MBoC Molecular Biology of the Cell (https://www.molbiolcell.org/)
+- Nature (https://www.nature.com/) 
+- Oxford Academic Journals (https://academic.oup.com/journals)
+- Paperity (https://paperity.org/) 
+- PLOS (https://www.plos.org/) 
+- PNAS (https://www.pnas.org/) 
+- Project Muse (https://muse.jhu.edu/)
+- PubMed (https://www.ncbi.nlm.nih.gov/pubmed)
+- ResearchGate (https://www.researchgate.net/press) 
+- SAGE Journals (https://journals.sagepub.com/)
+- ScienceOpen (https://www.scienceopen.com/)
+- Springer (https://link.springer.com/)
+- SSRN (https://www.ssrn.com/index.cfm/en/) 
+- Taylor & Francis Online (https://www.tandfonline.com/)
+- The New England Journal of Medicine (https://www.nejm.org/)
+- Towards Data Science (https://towardsdatascience.com/) 
+- Wiley Online Library (https://onlinelibrary.wiley.com/)
