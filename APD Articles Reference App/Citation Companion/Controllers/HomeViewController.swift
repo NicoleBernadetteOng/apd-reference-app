@@ -8,7 +8,7 @@
 
 import UIKit
 import MXParallaxHeader
-
+import ImageSlideshow
 
 class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var button1: UIButton!
@@ -22,7 +22,7 @@ class HomeTableViewCell: UITableViewCell {
 }
 
 
-class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableViewDelegate, UITableViewDataSource, ImageSlideshowDelegate {
 
     let navNameListLeft = ["Citation", "Article summarizer", "Find related articles"]
     let navNameListRight = ["Citation", "Review paper", "Abstract translator"]
@@ -41,6 +41,9 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
     @IBOutlet weak var tableView: UITableView!
     
     var scrollView: MXScrollView!
+    @IBOutlet weak var slideshow: ImageSlideshow!
+    
+    let localSource = [BundleImageSource(imageString: "spamd1"), BundleImageSource(imageString: "trove")]
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -71,7 +74,25 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
         
         view.bringSubviewToFront(questionBtn)
         view.bringSubviewToFront(aboutbtn)
+        
+        // 'Carousel'
+        slideshow.slideshowInterval = 5.0
+        slideshow.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
+        slideshow.contentScaleMode = UIViewContentMode.scaleAspectFill
+
+        let pageControl = UIPageControl()
+        pageControl.currentPageIndicatorTintColor = UIColor.lightGray
+        pageControl.pageIndicatorTintColor = UIColor.black
+        slideshow.pageIndicator = pageControl
+
+        // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
+        slideshow.activityIndicator = DefaultActivityIndicator()
+        slideshow.delegate = self
+
+        // can be used with other sample sources as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
+        slideshow.setImageInputs(localSource)
     }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -79,7 +100,7 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
         var frame = view.bounds
         
         view.backgroundColor = #colorLiteral(red: 0.9635079339, green: 0.9635079339, blue: 0.9635079339, alpha: 0.8470588235)
-        scrollView.backgroundColor = #colorLiteral(red: 0.9635079339, green: 0.9635079339, blue: 0.9635079339, alpha: 0.8470588235)
+//        scrollView.backgroundColor = #colorLiteral(red: 0.9635079339, green: 0.9635079339, blue: 0.9635079339, alpha: 0.8470588235)
         tableView.backgroundColor = #colorLiteral(red: 0.9635079339, green: 0.9635079339, blue: 0.9635079339, alpha: 0.8470588235)
         
         scrollView.frame = frame
@@ -95,7 +116,7 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
     override var prefersStatusBarHidden: Bool {
         return true
     }
-   
+    
     
     // MARK: - Table view data source
     
@@ -201,3 +222,4 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
     }
     
 }
+

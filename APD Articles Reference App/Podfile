@@ -23,6 +23,7 @@ pod 'CropViewController'
 pod 'MXParallaxHeader'
 pod 'SwiftEntryKit'
 pod 'EzPopup'
+pod 'ImageSlideshow'
 
 pod 'SwiftyJSON', '~> 4.0'
 

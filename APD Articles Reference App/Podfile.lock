@@ -110,6 +110,9 @@ PODS:
   - GTMSessionFetcher/Core (1.2.2)
   - GTMSessionFetcher/Full (1.2.2):
     - GTMSessionFetcher/Core (= 1.2.2)
+  - ImageSlideshow (1.8.1):
+    - ImageSlideshow/Core (= 1.8.1)
+  - ImageSlideshow/Core (1.8.1)
   - MXParallaxHeader (1.0.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -135,6 +138,7 @@ DEPENDENCIES:
   - Firebase/MLVision
   - Firebase/MLVisionTextModel
   - FloatingPanel
+  - ImageSlideshow
   - MXParallaxHeader
   - paper-onboarding
   - Reductio
@@ -165,6 +169,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GoogleUtilities
     - GTMSessionFetcher
+    - ImageSlideshow
     - MXParallaxHeader
     - nanopb
     - paper-onboarding
@@ -197,6 +202,7 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
   GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  ImageSlideshow: 634865d7d4e96f21e3830a31b51bde768cc94cea
   MXParallaxHeader: a95e0af1f485b1b718a6939f583f0dbae6992c41
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   paper-onboarding: 47ded9ede6ae9dd7ec135dddd8bd3e170b79d799
@@ -208,6 +214,6 @@ SPEC CHECKSUMS:
   SwiftSoup: a91d3c96ecb6f8f13005552ef60f9075aae4a7f3
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 086f4547dc96997d4cdd53c6731b6795469847cb
+PODFILE CHECKSUM: ed5b63d9cbbe48090805a1ca19c1e28ff33109d3
 
 COCOAPODS: 1.8.4

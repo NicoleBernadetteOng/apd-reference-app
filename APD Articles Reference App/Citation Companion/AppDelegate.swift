@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Citation Companion
 //
-//  Created by Megan Ong Kailing on 4/10/19.
+//  Created by Nicole Ong on 4/10/19.
 //  Copyright © 2019 Nicole Bernadette Ong. All rights reserved.
 //
 

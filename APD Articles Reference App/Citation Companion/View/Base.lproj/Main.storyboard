@@ -147,6 +147,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2c-sc-eUS" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="5lH-ov-l2A"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFI-fS-Ner">
                                 <rect key="frame" x="329" y="16" width="30" height="30"/>
                                 <constraints>
@@ -173,8 +180,11 @@
                         <color key="backgroundColor" red="0.9635079339" green="0.9635079339" blue="0.9635079339" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vFI-fS-Ner" firstAttribute="leading" secondItem="nRK-8p-QKN" secondAttribute="trailing" constant="12" id="6V9-GR-q3j"/>
+                            <constraint firstItem="o2c-sc-eUS" firstAttribute="top" secondItem="5Z4-QJ-akn" secondAttribute="top" id="RS5-pz-O91"/>
+                            <constraint firstItem="5Z4-QJ-akn" firstAttribute="trailing" secondItem="o2c-sc-eUS" secondAttribute="trailing" id="Tx0-LD-faH"/>
                             <constraint firstAttribute="trailing" secondItem="vFI-fS-Ner" secondAttribute="trailing" constant="16" id="ZKA-mC-nVk"/>
                             <constraint firstItem="nRK-8p-QKN" firstAttribute="top" secondItem="VJp-1c-bjX" secondAttribute="top" constant="16" id="cpL-HH-gMq"/>
+                            <constraint firstItem="o2c-sc-eUS" firstAttribute="leading" secondItem="5Z4-QJ-akn" secondAttribute="leading" id="gLj-UT-6OQ"/>
                             <constraint firstItem="vFI-fS-Ner" firstAttribute="top" secondItem="VJp-1c-bjX" secondAttribute="top" constant="16" id="vgJ-4q-lAK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Z4-QJ-akn"/>
@@ -182,6 +192,7 @@
                     <connections>
                         <outlet property="aboutbtn" destination="vFI-fS-Ner" id="8am-AA-8gp"/>
                         <outlet property="questionBtn" destination="nRK-8p-QKN" id="SfJ-hv-4dU"/>
+                        <outlet property="slideshow" destination="o2c-sc-eUS" id="4vQ-Cc-Gor"/>
                         <outlet property="tableView" destination="yTe-Be-an8" id="rLr-qI-Qlp"/>
                         <segue destination="uAD-EP-Y2r" kind="presentation" identifier="toCitationByDOI" modalPresentationStyle="fullScreen" id="WZx-Ou-3pF"/>
                         <segue destination="5Ci-M0-Kwd" kind="presentation" identifier="toCitationByTitle" modalPresentationStyle="fullScreen" id="80h-TP-zPy"/>
@@ -765,11 +776,11 @@
             <objects>
                 <viewController title="Select Title" id="Z9D-9g-DeU" customClass="SelectTitleViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVw-vF-MeI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kup-D2-XPW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <color key="barTintColor" red="0.40043808069999998" green="0.58358565179999999" blue="0.99766021569999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -792,7 +803,7 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c8u-1J-aL6">
-                                <rect key="frame" x="16" y="60" width="343" height="575"/>
+                                <rect key="frame" x="16" y="72" width="343" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" rowHeight="168" id="68V-LQ-1kA" customClass="TitleTableViewCell" customModule="APD_Articles_Reference_App" customModuleProvider="target">
@@ -2334,10 +2345,10 @@
         <segue reference="DoS-ou-0Gq"/>
         <segue reference="P8q-lY-KOQ"/>
         <segue reference="WZx-Ou-3pF"/>
-        <segue reference="9UT-Az-X2O"/>
-        <segue reference="fQR-xr-Opc"/>
+        <segue reference="avM-cB-QqV"/>
+        <segue reference="80h-TP-zPy"/>
         <segue reference="f2r-dC-dxt"/>
-        <segue reference="fu3-3k-fno"/>
+        <segue reference="A3M-8N-7v9"/>
         <segue reference="47Y-6P-UR0"/>
     </inferredMetricsTieBreakers>
 </document>
