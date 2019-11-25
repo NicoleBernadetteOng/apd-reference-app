@@ -76,9 +76,9 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
         view.bringSubviewToFront(aboutbtn)
         
         // 'Carousel'
-        slideshow.slideshowInterval = 5.0
+        slideshow.slideshowInterval = 7.7
         slideshow.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
-        slideshow.contentScaleMode = UIViewContentMode.scaleAspectFill
+        slideshow.contentScaleMode = UIViewContentMode.scaleAspectFit
 
         let pageControl = UIPageControl()
         pageControl.currentPageIndicatorTintColor = UIColor.lightGray
@@ -88,8 +88,6 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
         // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
         slideshow.activityIndicator = DefaultActivityIndicator()
         slideshow.delegate = self
-
-        // can be used with other sample sources as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
         slideshow.setImageInputs(localSource)
     }
     
