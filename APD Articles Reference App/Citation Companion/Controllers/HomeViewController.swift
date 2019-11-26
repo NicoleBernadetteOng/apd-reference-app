@@ -48,7 +48,7 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        scrollView.parallaxHeader.minimumHeight = view.safeAreaInsets.top + 68
+        scrollView.parallaxHeader.minimumHeight = view.safeAreaInsets.top + 65
         
         // MARK: Tutorial
 //        showTutorial(key: "homeFirstTime", title: "Welcome!", description: "Click on 'Notepad' in the navigation bar.", imageChosen: UIImage(named: "keywords.png")!)
@@ -75,18 +75,11 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
         view.bringSubviewToFront(questionBtn)
         view.bringSubviewToFront(aboutbtn)
         
-        // 'Carousel'
-        slideshow.slideshowInterval = 7.7
-        slideshow.pageIndicatorPosition = .init(horizontal: .center, vertical: .under)
+        // Carousel
+        slideshow.slideshowInterval = 7
+        slideshow.pageIndicator = nil
         slideshow.contentScaleMode = UIViewContentMode.scaleAspectFit
-
-        let pageControl = UIPageControl()
-        pageControl.currentPageIndicatorTintColor = UIColor.lightGray
-        pageControl.pageIndicatorTintColor = UIColor.black
-        slideshow.pageIndicator = pageControl
-
-        // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
-        slideshow.activityIndicator = DefaultActivityIndicator()
+       
         slideshow.delegate = self
         slideshow.setImageInputs(localSource)
     }
@@ -98,7 +91,7 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
         var frame = view.bounds
         
         view.backgroundColor = #colorLiteral(red: 0.9635079339, green: 0.9635079339, blue: 0.9635079339, alpha: 0.8470588235)
-//        scrollView.backgroundColor = #colorLiteral(red: 0.9635079339, green: 0.9635079339, blue: 0.9635079339, alpha: 0.8470588235)
+//        scrollView.backgroundColor = #colorLiteral(red: 0.8642234977, green: 0.9774690412, blue: 1, alpha: 1)
         tableView.backgroundColor = #colorLiteral(red: 0.9635079339, green: 0.9635079339, blue: 0.9635079339, alpha: 0.8470588235)
         
         scrollView.frame = frame
@@ -213,11 +206,33 @@ class HomeViewController: UIViewController, MXParallaxHeaderDelegate, UITableVie
         self.performSegue(withIdentifier: "AboutVC", sender: self)
     }
     
-    // MARK: - Scroll view delegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        NSLog("progress %f", scrollView.parallaxHeader.progress)
-        print(scrollView.parallaxHeader.progress)
-    }
-    
 }
 
+
+
+// MARK: - About Page
+import WebKit
+
+class AboutViewController: UIViewController, WKNavigationDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet var webView: WKWebView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround()
+        
+        let url = URL(string: "https://woundeducation.apdskeg.com/AboutUsDOIApp/doiapp.html")
+        let preferences = WKPreferences()
+        preferences.javaScriptEnabled = true
+        let config = WKWebViewConfiguration()
+        config.preferences = preferences
+        webView = WKWebView(frame: CGRect(x:0, y: 80, width: view.frame.width, height: view.frame.height-80), configuration: config)
+        view.addSubview(webView)
+        
+        webView.navigationDelegate = self
+
+        // Load the url
+        webView.load(URLRequest(url: url!))
+    }
+}

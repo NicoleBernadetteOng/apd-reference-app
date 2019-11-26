@@ -149,7 +149,7 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2c-sc-eUS" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.86422349767713591" green="0.977469041199584" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="5lH-ov-l2A"/>
                                 </constraints>
@@ -177,13 +177,13 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.9635079339" green="0.9635079339" blue="0.9635079339" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.86422349769999995" green="0.9774690412" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vFI-fS-Ner" firstAttribute="leading" secondItem="nRK-8p-QKN" secondAttribute="trailing" constant="12" id="6V9-GR-q3j"/>
-                            <constraint firstItem="o2c-sc-eUS" firstAttribute="top" secondItem="5Z4-QJ-akn" secondAttribute="top" id="RS5-pz-O91"/>
                             <constraint firstItem="5Z4-QJ-akn" firstAttribute="trailing" secondItem="o2c-sc-eUS" secondAttribute="trailing" id="Tx0-LD-faH"/>
                             <constraint firstAttribute="trailing" secondItem="vFI-fS-Ner" secondAttribute="trailing" constant="16" id="ZKA-mC-nVk"/>
                             <constraint firstItem="nRK-8p-QKN" firstAttribute="top" secondItem="VJp-1c-bjX" secondAttribute="top" constant="16" id="cpL-HH-gMq"/>
+                            <constraint firstItem="o2c-sc-eUS" firstAttribute="top" secondItem="VJp-1c-bjX" secondAttribute="top" id="dZv-Kh-m0f"/>
                             <constraint firstItem="o2c-sc-eUS" firstAttribute="leading" secondItem="5Z4-QJ-akn" secondAttribute="leading" id="gLj-UT-6OQ"/>
                             <constraint firstItem="vFI-fS-Ner" firstAttribute="top" secondItem="VJp-1c-bjX" secondAttribute="top" constant="16" id="vgJ-4q-lAK"/>
                         </constraints>
@@ -204,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNP-ZH-iWY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-659.765625" y="112.88433382137627"/>
+            <point key="canvasLocation" x="-660.86956521739137" y="111.83035714285714"/>
         </scene>
         <!--Summary-->
         <scene sceneID="heC-1l-hXY">
@@ -1234,10 +1234,10 @@
             </objects>
             <point key="canvasLocation" x="-3100" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="jXg-EL-cWq">
             <objects>
-                <viewController storyboardIdentifier="AboutVC" id="2tQ-kc-Xqo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutVC" id="2tQ-kc-Xqo" customClass="AboutViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OWK-sS-lTU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1280,6 +1280,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B7t-Q8-5Tk"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="6Fv-4z-hkt" id="ZZR-uL-L5e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlA-fZ-xAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2279,7 +2282,7 @@
         <segue reference="WZx-Ou-3pF"/>
         <segue reference="avM-cB-QqV"/>
         <segue reference="80h-TP-zPy"/>
-        <segue reference="f2r-dC-dxt"/>
+        <segue reference="Q2w-ZW-k5H"/>
         <segue reference="A3M-8N-7v9"/>
         <segue reference="bCD-ze-LOo"/>
     </inferredMetricsTieBreakers>
