@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Citation Companion.xcodeproj">
+      location = "group:/Users/nicoleong/Documents/iOSApplications/apd-articles-reference-app/APD Articles Reference App/APD Reference App.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

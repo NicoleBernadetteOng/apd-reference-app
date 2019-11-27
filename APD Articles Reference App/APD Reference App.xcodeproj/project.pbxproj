@@ -42,7 +42,7 @@
 		2B318F9B234C8E5D00EF8C92 /* ImageTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleViewController.swift; sourceTree = "<group>"; };
 		2B318F9D234EC74600EF8C92 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		2B318F9F234EC76400EF8C92 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
-		2B3C68C72346C41C004B5363 /* APD Articles Reference App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APD Articles Reference App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3C68C72346C41C004B5363 /* APD Reference App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APD Reference App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3C68CA2346C41C004B5363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B3C68CC2346C41D004B5363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B3C68CF2346C41D004B5363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		2B3C68C82346C41C004B5363 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B3C68C72346C41C004B5363 /* APD Articles Reference App.app */,
+				2B3C68C72346C41C004B5363 /* APD Reference App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B3C68C62346C41C004B5363 /* Citation Companion */ = {
+		2B3C68C62346C41C004B5363 /* APD Reference App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B3C68DC2346C41E004B5363 /* Build configuration list for PBXNativeTarget "Citation Companion" */;
+			buildConfigurationList = 2B3C68DC2346C41E004B5363 /* Build configuration list for PBXNativeTarget "APD Reference App" */;
 			buildPhases = (
 				C4B4C2EAA2156C85D6E0F9A2 /* [CP] Check Pods Manifest.lock */,
 				2B3C68C32346C41C004B5363 /* Sources */,
@@ -189,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = "Citation Companion";
+			name = "APD Reference App";
 			productName = "Citation Companion";
-			productReference = 2B3C68C72346C41C004B5363 /* APD Articles Reference App.app */;
+			productReference = 2B3C68C72346C41C004B5363 /* APD Reference App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2B3C68C22346C41C004B5363 /* Build configuration list for PBXProject "Citation Companion" */;
+			buildConfigurationList = 2B3C68C22346C41C004B5363 /* Build configuration list for PBXProject "APD Reference App" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,7 +227,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B3C68C62346C41C004B5363 /* Citation Companion */,
+				2B3C68C62346C41C004B5363 /* APD Reference App */,
 			);
 		};
 /* End PBXProject section */
@@ -483,8 +483,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Nicole-Bernadette-Ong.APD-Articles-Reference";
-				PRODUCT_NAME = "APD Articles Reference App";
+				PRODUCT_BUNDLE_IDENTIFIER = "Nicole-Bernadette-Ong.APD-Reference";
+				PRODUCT_NAME = "APD Reference App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -502,8 +502,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Nicole-Bernadette-Ong.APD-Articles-Reference";
-				PRODUCT_NAME = "APD Articles Reference App";
+				PRODUCT_BUNDLE_IDENTIFIER = "Nicole-Bernadette-Ong.APD-Reference";
+				PRODUCT_NAME = "APD Reference App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -512,7 +512,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B3C68C22346C41C004B5363 /* Build configuration list for PBXProject "Citation Companion" */ = {
+		2B3C68C22346C41C004B5363 /* Build configuration list for PBXProject "APD Reference App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B3C68DA2346C41E004B5363 /* Debug */,
@@ -521,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B3C68DC2346C41E004B5363 /* Build configuration list for PBXNativeTarget "Citation Companion" */ = {
+		2B3C68DC2346C41E004B5363 /* Build configuration list for PBXNativeTarget "APD Reference App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B3C68DD2346C41E004B5363 /* Debug */,
