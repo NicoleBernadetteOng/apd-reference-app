@@ -35,11 +35,12 @@ UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     var resultsText = ""
     var langToLang = ""
     
-    let languages = ["ar", "de", "en", "es", "tl", "fr", "it", "ja", "ko", "ms", "ru", "sv", "ta", "th", "vi"]
-    let fullLanguages = ["Arabic", "German", "English", "Spanish", "Tagalog", "French", "Italian", "Japanese", "Korean", "Malay", "Russian", "Swedish", "Tamil", "Thai", "Vietnamese"]
+    let languages = ["ar", "zh", "de", "en", "es", "tl", "fr", "it", "ja", "ko", "ms", "ru", "sv", "ta", "th", "vi"]
+    let fullLanguages = ["Arabic", "Chinese", "German", "English", "Spanish", "Tagalog", "French", "Italian", "Japanese", "Korean", "Malay", "Russian", "Swedish", "Tamil", "Thai", "Vietnamese"]
     
     var languageDict: Dictionary = [
         "Arabic": "ar",
+        "Chinese": "zh",
         "German": "de",
         "English": "en",
         "Spanish": "es",
