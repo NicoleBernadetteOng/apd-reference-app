@@ -207,3 +207,19 @@ class SelectDOIViewController: UIViewController, UIImagePickerControllerDelegate
 
 
 }
+
+
+// MARK: - DOI Uploading Method View Controller
+class UploadingMethodDOIViewController: UIViewController, UINavigationControllerDelegate {
+    @IBOutlet weak var manualBtn: UIButton!
+    @IBOutlet weak var imageBtn: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        manualBtn.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+        
+        imageBtn.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+    }
+}
+

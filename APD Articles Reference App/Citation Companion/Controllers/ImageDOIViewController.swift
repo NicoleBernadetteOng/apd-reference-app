@@ -174,7 +174,6 @@ UINavigationControllerDelegate {
                                                 // - 'Automatically' start the OCR
                                                 self.detectDoiText(image: self.imageView.image)
                                                 self.imageView.isUserInteractionEnabled = false
-                            
                                                 self.textView.isHidden = false })
     }
     

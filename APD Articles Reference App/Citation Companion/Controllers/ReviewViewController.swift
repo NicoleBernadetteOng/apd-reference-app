@@ -130,6 +130,7 @@ UINavigationControllerDelegate, WKNavigationDelegate, MFMailComposeViewControlle
         
         // - 'Automatically' start the OCR
         detectDoiText(image: imageView.image)
+        self.view.bringSubviewToFront(self.scanBtn)
     }
     
     

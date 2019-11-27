@@ -83,3 +83,20 @@ class SelectTitleViewController: UIViewController, UINavigationControllerDelegat
     
 
 }
+
+
+// MARK: - Title Uploading Method View Controller
+class UploadingMethodTitleViewController: UIViewController, UINavigationControllerDelegate {
+    
+    @IBOutlet weak var manualBtn: UIButton!
+    @IBOutlet weak var imageBtn: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        manualBtn.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+
+        imageBtn.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+    }
+}
+
