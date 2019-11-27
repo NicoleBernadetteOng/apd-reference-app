@@ -826,6 +826,7 @@ class SearchPanelViewController: UIViewController, UICollectionViewDelegateFlowL
         return buttonCell
     }
     
+   
     // When the button in CollectionViewCell is pressed
     
     
