@@ -50,9 +50,6 @@ class ArticleViewController: UIViewController, WKNavigationDelegate, UINavigatio
         
         self.hideKeyboardWhenTappedAround()
         
-        UINavigationBar.appearance().shadowImage = UIImage()
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        
         let unwrappedUrl: String = self.url!
         print("unwrappedUrl: " + unwrappedUrl)
         
@@ -61,7 +58,7 @@ class ArticleViewController: UIViewController, WKNavigationDelegate, UINavigatio
         preferences.javaScriptEnabled = true
         let config = WKWebViewConfiguration()
         config.preferences = preferences
-        webView = WKWebView(frame: CGRect(x:0, y: 80, width: view.frame.width, height: view.frame.height-80), configuration: config)
+        webView = WKWebView(frame: CGRect(x:0, y: 44, width: view.frame.width, height: view.frame.height-44), configuration: config)
         view.addSubview(webView)
         
         webView.navigationDelegate = self
@@ -91,9 +88,9 @@ class ArticleViewController: UIViewController, WKNavigationDelegate, UINavigatio
         fpc.track(scrollView: searchVC.scrollView)
     }
     
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
     @IBAction func showNotepadTapped(_ sender: Any) {
         showNotepad()

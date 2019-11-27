@@ -344,6 +344,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sWe-QW-AQj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="TKP-n9-R02"/>
                     <connections>
                         <outlet property="goBtn" destination="4sy-ts-0I1" id="VfR-QC-TNu"/>
                         <outlet property="imageView" destination="9iZ-8a-JhR" id="Ch9-WT-qHn"/>
@@ -411,7 +412,7 @@
                             <constraint firstItem="iSP-vj-MON" firstAttribute="bottom" secondItem="8wQ-MG-pgG" secondAttribute="bottom" id="Pbw-iw-b2H"/>
                             <constraint firstItem="iSP-vj-MON" firstAttribute="bottom" secondItem="KvQ-Ly-WTJ" secondAttribute="bottom" id="Rfb-e1-use"/>
                             <constraint firstItem="iSP-vj-MON" firstAttribute="leading" secondItem="KvQ-Ly-WTJ" secondAttribute="leading" id="VRN-OU-cUA"/>
-                            <constraint firstItem="ypY-lY-Lxz" firstAttribute="top" secondItem="8wQ-MG-pgG" secondAttribute="top" id="VYw-As-fqg"/>
+                            <constraint firstItem="ypY-lY-Lxz" firstAttribute="top" secondItem="2UP-nf-hn1" secondAttribute="top" id="VYw-As-fqg"/>
                             <constraint firstItem="ypY-lY-Lxz" firstAttribute="leading" secondItem="8wQ-MG-pgG" secondAttribute="leading" id="Y3l-0l-DT5"/>
                             <constraint firstItem="iSP-vj-MON" firstAttribute="top" secondItem="ypY-lY-Lxz" secondAttribute="bottom" id="fPb-4Y-3jM"/>
                             <constraint firstItem="ypY-lY-Lxz" firstAttribute="trailing" secondItem="8wQ-MG-pgG" secondAttribute="trailing" id="gL5-FY-lvM"/>
@@ -2277,13 +2278,13 @@
         <image name="titles" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DoS-ou-0Gq"/>
+        <segue reference="4WT-Kv-WzR"/>
         <segue reference="P8q-lY-KOQ"/>
         <segue reference="WZx-Ou-3pF"/>
         <segue reference="avM-cB-QqV"/>
         <segue reference="80h-TP-zPy"/>
         <segue reference="Q2w-ZW-k5H"/>
-        <segue reference="A3M-8N-7v9"/>
-        <segue reference="bCD-ze-LOo"/>
+        <segue reference="fu3-3k-fno"/>
+        <segue reference="BVc-PY-7CB"/>
     </inferredMetricsTieBreakers>
 </document>
