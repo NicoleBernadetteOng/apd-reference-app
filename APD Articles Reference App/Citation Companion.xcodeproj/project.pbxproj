@@ -42,7 +42,7 @@
 		2B318F9B234C8E5D00EF8C92 /* ImageTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleViewController.swift; sourceTree = "<group>"; };
 		2B318F9D234EC74600EF8C92 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		2B318F9F234EC76400EF8C92 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
-		2B3C68C72346C41C004B5363 /* Citation Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citation Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3C68C72346C41C004B5363 /* APD Reference App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APD Reference App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3C68CA2346C41C004B5363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B3C68CC2346C41D004B5363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B3C68CF2346C41D004B5363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		2B3C68C82346C41C004B5363 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B3C68C72346C41C004B5363 /* Citation Companion.app */,
+				2B3C68C72346C41C004B5363 /* APD Reference App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 			);
 			name = "Citation Companion";
 			productName = "Citation Companion";
-			productReference = 2B3C68C72346C41C004B5363 /* Citation Companion.app */;
+			productReference = 2B3C68C72346C41C004B5363 /* APD Reference App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -484,7 +484,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Nicole-Bernadette-Ong.APD-Reference";
-				PRODUCT_NAME = "Citation Companion";
+				PRODUCT_NAME = "APD Reference App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -503,7 +503,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Nicole-Bernadette-Ong.APD-Reference";
-				PRODUCT_NAME = "Citation Companion";
+				PRODUCT_NAME = "APD Reference App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

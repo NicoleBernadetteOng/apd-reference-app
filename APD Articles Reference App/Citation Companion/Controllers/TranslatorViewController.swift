@@ -21,6 +21,7 @@ UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var langPicker: UIPickerView!
     @IBOutlet weak var imgBtn: UIButton!
     @IBOutlet weak var translateBtn: UIButton!
+    @IBOutlet weak var cameraImg: UIImageView!
     
     var timer: Timer?
     var runCount = 0
@@ -200,6 +201,8 @@ UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     public func updateImageViewWithImage(_ image: UIImage, fromCropViewController cropViewController: CropViewController) {
         print("updateImageViewWithImage")
         
+        self.view.bringSubviewToFront(imgBtn)
+        self.cameraImg.isHidden = true
         imageView.contentMode = .scaleAspectFit
         imageView.image = image
         

@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="hh2-6M-ajq">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DV7-ED-8CN" customClass="ViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DV7-ED-8CN" customClass="ViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QFA-3N-JOu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
         <!--Home View Controller-->
         <scene sceneID="ZNO-Js-fTK">
             <objects>
-                <viewController id="LE1-xA-rKz" customClass="HomeViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LE1-xA-rKz" customClass="HomeViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VJp-1c-bjX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +60,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="separatorColor" red="0.9635079339" green="0.9635079339" blue="0.9635079339" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="homeCell" rowHeight="250" id="IoC-oi-2cn" customClass="HomeTableViewCell" customModule="APD_Articles_Reference_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="homeCell" rowHeight="250" id="IoC-oi-2cn" customClass="HomeTableViewCell" customModule="APD_Reference_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="712" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IoC-oi-2cn" id="hbW-Zt-uUA">
@@ -209,7 +209,7 @@
         <!--Summary-->
         <scene sceneID="heC-1l-hXY">
             <objects>
-                <viewController title="Summary" id="9tO-k6-UXS" customClass="SummaryViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Summary" id="9tO-k6-UXS" customClass="SummaryViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GaL-FL-RnH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,7 +248,7 @@
                                 <rect key="frame" x="0.0" y="144" width="375" height="523"/>
                                 <color key="backgroundColor" red="0.94118361399999995" green="0.94118361399999995" blue="0.94118361399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCell" rowHeight="170" id="Kvl-aB-qqC" customClass="SummaryTableViewCell" customModule="APD_Articles_Reference_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryCell" rowHeight="170" id="Kvl-aB-qqC" customClass="SummaryTableViewCell" customModule="APD_Reference_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kvl-aB-qqC" id="gEe-2Z-J9P">
@@ -369,7 +369,7 @@
         <!--Article-->
         <scene sceneID="Tm4-oq-jPM">
             <objects>
-                <viewController storyboardIdentifier="ArticleViewController" title="Article" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cH2-xJ-a23" customClass="ArticleViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArticleViewController" title="Article" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cH2-xJ-a23" customClass="ArticleViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2UP-nf-hn1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -439,7 +439,7 @@
         <!--Enter Title View Controller-->
         <scene sceneID="o24-yC-X42">
             <objects>
-                <viewController id="YUm-TF-QEg" customClass="EnterTitleViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YUm-TF-QEg" customClass="EnterTitleViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ex8-BD-Ute">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,7 +556,7 @@
         <!--Uploading Method Title View Controller-->
         <scene sceneID="L0M-Wn-nx0">
             <objects>
-                <viewController id="5Ci-M0-Kwd" customClass="UploadingMethodTitleViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Ci-M0-Kwd" customClass="UploadingMethodTitleViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f3g-4O-AOr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -680,7 +680,7 @@
         <!--Image Title View Controller-->
         <scene sceneID="rLX-Pm-wWt">
             <objects>
-                <viewController storyboardIdentifier="Image Title" id="PMH-R1-nsC" customClass="ImageTitleViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Image Title" id="PMH-R1-nsC" customClass="ImageTitleViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fJ7-zf-o7E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -809,7 +809,7 @@
         <!--Select Title-->
         <scene sceneID="OP1-e0-wmf">
             <objects>
-                <viewController title="Select Title" id="Z9D-9g-DeU" customClass="SelectTitleViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Select Title" id="Z9D-9g-DeU" customClass="SelectTitleViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVw-vF-MeI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -841,7 +841,7 @@
                                 <rect key="frame" x="16" y="60" width="343" height="575"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" rowHeight="168" id="68V-LQ-1kA" customClass="TitleTableViewCell" customModule="APD_Articles_Reference_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" rowHeight="168" id="68V-LQ-1kA" customClass="TitleTableViewCell" customModule="APD_Reference_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="168"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="68V-LQ-1kA" id="das-El-fkJ">
@@ -901,7 +901,7 @@
         <!--Review View Controller-->
         <scene sceneID="YrN-MG-UKN">
             <objects>
-                <viewController id="sZE-D7-Otc" customClass="ReviewViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sZE-D7-Otc" customClass="ReviewViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a8a-9i-cds">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1095,7 +1095,7 @@
         <!--Translator View Controller-->
         <scene sceneID="zvh-Pv-XGm">
             <objects>
-                <viewController id="E7O-sU-hXH" customClass="TranslatorViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="E7O-sU-hXH" customClass="TranslatorViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gDP-w6-Met">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1226,6 +1226,7 @@
                         <viewLayoutGuide key="safeArea" id="FrP-SV-RWU"/>
                     </view>
                     <connections>
+                        <outlet property="cameraImg" destination="Zzr-Qm-XST" id="kld-gr-SvA"/>
                         <outlet property="imageView" destination="LHY-KR-3kS" id="8ME-Og-5Ty"/>
                         <outlet property="imgBtn" destination="88C-c4-mQD" id="TiM-Rt-pgX"/>
                         <outlet property="langPicker" destination="mXF-xS-F7G" id="Y8j-nU-hSx"/>
@@ -1241,7 +1242,7 @@
         <!--Notepad View Controller-->
         <scene sceneID="Rb5-Kt-PIT">
             <objects>
-                <viewController storyboardIdentifier="NotepadViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OLY-cu-yqd" customClass="NotepadViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotepadViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OLY-cu-yqd" customClass="NotepadViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pl8-BI-DQi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1296,7 +1297,7 @@
         <!--About View Controller-->
         <scene sceneID="jXg-EL-cWq">
             <objects>
-                <viewController storyboardIdentifier="AboutVC" id="2tQ-kc-Xqo" customClass="AboutViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutVC" id="2tQ-kc-Xqo" customClass="AboutViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OWK-sS-lTU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1358,7 +1359,7 @@
         <!--Tutorial View Controller-->
         <scene sceneID="tmx-NM-ww7">
             <objects>
-                <viewController storyboardIdentifier="TutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0IJ-2z-4GM" customClass="TutorialViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0IJ-2z-4GM" customClass="TutorialViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uSY-dD-rig">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1413,7 +1414,7 @@
         <!--EnterDOI View Controller-->
         <scene sceneID="E3t-Ei-1tX">
             <objects>
-                <viewController id="fw5-Lq-R75" customClass="EnterDOIViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fw5-Lq-R75" customClass="EnterDOIViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vj1-Dm-YsG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1527,7 +1528,7 @@
         <!--Uploading MethodDOI View Controller-->
         <scene sceneID="1Xm-uz-cCm">
             <objects>
-                <viewController id="uAD-EP-Y2r" customClass="UploadingMethodDOIViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uAD-EP-Y2r" customClass="UploadingMethodDOIViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0bP-qw-SHo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1654,7 +1655,7 @@
         <!--DOI Image-->
         <scene sceneID="TYk-ML-GT7">
             <objects>
-                <viewController storyboardIdentifier="ImageDoiVC" title="DOI Image" id="gXh-KB-kHk" customClass="ImageDOIViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageDoiVC" title="DOI Image" id="gXh-KB-kHk" customClass="ImageDOIViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e8A-Pj-idP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1776,7 +1777,7 @@
         <!--Select DOI-->
         <scene sceneID="7iq-KX-qdh">
             <objects>
-                <viewController storyboardIdentifier="SelectDOI" title="Select DOI" id="CDf-45-Gkw" customClass="SelectDOIViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectDOI" title="Select DOI" id="CDf-45-Gkw" customClass="SelectDOIViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cB4-QD-QHj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1927,7 +1928,7 @@
         <!--Citation View Controller-->
         <scene sceneID="zx7-RB-tD2">
             <objects>
-                <viewController id="RPz-4t-AwW" customClass="CitationViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RPz-4t-AwW" customClass="CitationViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PaU-wu-6z5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1936,7 +1937,7 @@
                                 <rect key="frame" x="8" y="52" width="359" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="citationCell" rowHeight="120" id="9W0-l6-3Yo" customClass="CitationTableViewCell" customModule="APD_Articles_Reference_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="citationCell" rowHeight="120" id="9W0-l6-3Yo" customClass="CitationTableViewCell" customModule="APD_Reference_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="359" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9W0-l6-3Yo" id="ay4-GF-g5B">
@@ -2070,7 +2071,7 @@
         <!--Related View Controller-->
         <scene sceneID="Jgt-Dj-NDv">
             <objects>
-                <viewController storyboardIdentifier="relatedVC" id="XVP-An-b84" customClass="RelatedViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="relatedVC" id="XVP-An-b84" customClass="RelatedViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M0M-iL-dIG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2109,10 +2110,10 @@
                                 <rect key="frame" x="9" y="110" width="357" height="469"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="citeCell" rowHeight="120" id="219-aS-R2l" customClass="CiteTableViewCell" customModule="APD_Articles_Reference_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="citeCell" rowHeight="120" id="219-aS-R2l" customClass="CiteTableViewCell" customModule="APD_Reference_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="357" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="219-aS-R2l" id="V0C-ev-8uq" customClass="CiteTableViewCell" customModule="APD_Articles_Reference_App" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="219-aS-R2l" id="V0C-ev-8uq" customClass="CiteTableViewCell" customModule="APD_Reference_App" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="357" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -2225,7 +2226,7 @@
         <!--Search Panel View Controller-->
         <scene sceneID="8Fd-Xw-Krw">
             <objects>
-                <viewController storyboardIdentifier="SearchPanel" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SmP-SY-BgU" customClass="SearchPanelViewController" customModule="APD_Articles_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchPanel" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SmP-SY-BgU" customClass="SearchPanelViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kAn-4e-z5Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2266,14 +2267,14 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="343" id="XuG-9P-iOM"/>
                                                     </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="8" minimumInteritemSpacing="5" id="b6e-jP-cMg" customClass="AlignedCollectionViewFlowLayout" customModule="APD_Articles_Reference_App" customModuleProvider="target">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="8" minimumInteritemSpacing="5" id="b6e-jP-cMg" customClass="AlignedCollectionViewFlowLayout" customModule="APD_Reference_App" customModuleProvider="target">
                                                         <size key="itemSize" width="77" height="34"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="buttonCell" id="sjE-kE-DpQ" customClass="ButtonCollectionViewCell" customModule="APD_Articles_Reference_App" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="buttonCell" id="sjE-kE-DpQ" customClass="ButtonCollectionViewCell" customModule="APD_Reference_App" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="77" height="34"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UGq-Gs-i6m">
@@ -2403,6 +2404,6 @@
         <segue reference="3vw-hP-mSK"/>
         <segue reference="f2r-dC-dxt"/>
         <segue reference="fu3-3k-fno"/>
-        <segue reference="Iug-M8-2c4"/>
+        <segue reference="pyx-Yt-Yoz"/>
     </inferredMetricsTieBreakers>
 </document>
