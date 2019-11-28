@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         // StatusBar colour
-        UIApplication.shared.statusBarView?.backgroundColor = #colorLiteral(red: 0.4004380807, green: 0.5835856518, blue: 0.9976602157, alpha: 0.8470588235)
+        UIApplication.shared.statusBarView?.backgroundColor = #colorLiteral(red: 0.03695822135, green: 0.5721280575, blue: 0.9600655437, alpha: 1)
         
         // Onboarding
         let defaults = UserDefaults.standard

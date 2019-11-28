@@ -149,7 +149,7 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2c-sc-eUS" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.84006858330948586" green="0.84302137720292658" blue="0.85187975888324874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="5lH-ov-l2A"/>
                                 </constraints>
@@ -2397,14 +2397,13 @@
         <image name="titles" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EuN-Sg-cev"/>
         <segue reference="XYx-iy-4Dj"/>
         <segue reference="7KR-FX-jtO"/>
-        <segue reference="aNa-Rl-15x"/>
+        <segue reference="WZx-Ou-3pF"/>
         <segue reference="avM-cB-QqV"/>
-        <segue reference="3vw-hP-mSK"/>
+        <segue reference="80h-TP-zPy"/>
         <segue reference="Q2w-ZW-k5H"/>
-        <segue reference="fu3-3k-fno"/>
+        <segue reference="A3M-8N-7v9"/>
         <segue reference="47Y-6P-UR0"/>
     </inferredMetricsTieBreakers>
 </document>

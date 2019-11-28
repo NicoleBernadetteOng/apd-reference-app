@@ -209,7 +209,7 @@ extension UIViewController {
     // =========== FUNCTION TO DISPLAY TOAST RELATED TO OCR ===========
     func showOCRToast(titleText: String, descriptionText: String, imageName: String) {
         var attributes = EKAttributes.bottomFloat
-        attributes.entryBackground = .gradient(gradient: .init(colors: [EKColor(#colorLiteral(red: 0.9050499797, green: 0.4948058128, blue: 0.6137661338, alpha: 1)), EKColor(.white)], startPoint: .zero, endPoint: CGPoint(x: 1, y: 1)))
+        attributes.entryBackground = .gradient(gradient: .init(colors: [EKColor(#colorLiteral(red: 0.750326294, green: 0.8894403989, blue: 1, alpha: 1)), EKColor(.white)], startPoint: .zero, endPoint: CGPoint(x: 1, y: 1)))
         attributes.popBehavior = .animated(animation: .init(translate: .init(duration: 0.3), scale: .init(from: 1, to: 0.7, duration: 0.7)))
         attributes.shadow = .active(with: .init(color: .black, opacity: 0.5, radius: 10, offset: .zero))
         attributes.statusBar = .dark
