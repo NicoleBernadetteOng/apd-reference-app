@@ -289,13 +289,18 @@ UINavigationControllerDelegate {
                 // get the DOIs from all the text using regular expressions
                 self.doiList = self.matchesDoi(for: "10.\\d+/\\w+\\W?[A-z0-9|/|.|(|)|;|:|-]+", in: self.resultsText)
                 
-                self.doiText = self.doiList[0] // first one
-                print(self.doiText)
+                if self.doiList.indices.contains(0) {
+                    self.doiText = self.doiList[0] // first one
+                    print(self.doiText)
+                    
+                    self.urlTextField.insertText("https://doi.org/" + self.doiText)
+                    
+                    // alert that DOI was captured
+                    self.showOCRToast(titleText: "Nice!", descriptionText: "DOI was cpatured. Click 'Confirm' to proceed.", imageName: "keywords.png")
+                } else {
+                    self.showOCRToast(titleText: "Oops!", descriptionText: "DOI could not be captured. Try again!", imageName: "keywords.png")
+                }
                 
-                self.urlTextField.insertText("https://doi.org/" + self.doiText)
-                
-                // alert that DOI was captured
-                self.showOCRToast(titleText: "Nice!", descriptionText: "DOI was cpatured. Click 'Confirm' to proceed.", imageName: "keywords.png")
             }
             
         }
@@ -322,7 +327,7 @@ UINavigationControllerDelegate {
     @IBAction func clearHistory(_ sender: Any) {
         // Show confirmation popup
         var attributes = EKAttributes.topFloat
-        attributes.entryBackground = .gradient(gradient: .init(colors: [EKColor(#colorLiteral(red: 0.8505505181, green: 0.2835509086, blue: 0.5002778391, alpha: 1)), EKColor(.white)], startPoint: .zero, endPoint: CGPoint(x: 1, y: 1)))
+        attributes.entryBackground = .gradient(gradient: .init(colors: [EKColor(#colorLiteral(red: 0.6246001935, green: 0.830504047, blue: 1, alpha: 1)), EKColor(.white)], startPoint: .zero, endPoint: CGPoint(x: 1, y: 1)))
         attributes.popBehavior = .animated(animation: .init(translate: .init(duration: 0.3), scale: .init(from: 1, to: 0.7, duration: 0.7)))
         attributes.shadow = .active(with: .init(color: .black, opacity: 0.5, radius: 10, offset: .zero))
         attributes.statusBar = .dark
@@ -341,7 +346,7 @@ UINavigationControllerDelegate {
         
         // Button
         let buttonLabel = EKProperty.LabelContent(text: "CLEAR HISTORY", style: .init(font: UIFont.systemFont(ofSize: 16.0), color: .black))
-        let okButton = EKProperty.ButtonContent(label: buttonLabel, backgroundColor: .white, highlightedBackgroundColor: EKColor(#colorLiteral(red: 0.8505505181, green: 0.2835509086, blue: 0.5002778391, alpha: 1))) {
+        let okButton = EKProperty.ButtonContent(label: buttonLabel, backgroundColor: .white, highlightedBackgroundColor: EKColor(#colorLiteral(red: 0.6246001935, green: 0.830504047, blue: 1, alpha: 1))) {
             SwiftEntryKit.dismiss {
                 print("okButton")
                 // If confirmed, clear all Core Data

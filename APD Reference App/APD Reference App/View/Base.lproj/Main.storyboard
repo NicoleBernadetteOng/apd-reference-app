@@ -51,7 +51,7 @@
             <objects>
                 <viewController id="LE1-xA-rKz" customClass="HomeViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VJp-1c-bjX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yTe-Be-an8">
@@ -149,7 +149,7 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2c-sc-eUS" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
-                                <color key="backgroundColor" red="0.84006858330948586" green="0.84302137720292658" blue="0.85187975888324874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.81308439623795536" green="0.8159423422292279" blue="0.82451618020304562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="5lH-ov-l2A"/>
                                 </constraints>
@@ -2404,6 +2404,6 @@
         <segue reference="80h-TP-zPy"/>
         <segue reference="Q2w-ZW-k5H"/>
         <segue reference="A3M-8N-7v9"/>
-        <segue reference="47Y-6P-UR0"/>
+        <segue reference="3jJ-vY-Gij"/>
     </inferredMetricsTieBreakers>
 </document>
