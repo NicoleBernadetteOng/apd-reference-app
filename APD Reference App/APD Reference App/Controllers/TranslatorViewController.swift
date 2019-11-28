@@ -36,23 +36,24 @@ UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     var resultsText = ""
     var langToLang = ""
     
-    let languages = ["ar", "zh", "de", "en", "es", "tl", "fr", "it", "ja", "ko", "ms", "ru", "sv", "ta", "th", "vi"]
-    let fullLanguages = ["Arabic", "Chinese", "German", "English", "Spanish", "Tagalog", "French", "Italian", "Japanese", "Korean", "Malay", "Russian", "Swedish", "Tamil", "Thai", "Vietnamese"]
+    let languages = ["ar", "zh", "en", "fr", "de", "he", "it", "ja", "ko", "ms", "ru", "es", "sv", "tl", "ta", "th", "vi"]
+    let fullLanguages = ["Arabic", "Chinese", "English", "French", "German", "Hebrew", "Italian", "Japanese", "Korean", "Malay", "Russian", "Spanish", "Swedish", "Tagalog", "Tamil", "Thai", "Vietnamese"]
     
     var languageDict: Dictionary = [
         "Arabic": "ar",
         "Chinese": "zh",
-        "German": "de",
         "English": "en",
-        "Spanish": "es",
-        "Tagalog": "tl",
         "French": "fr",
+        "German": "de",
+        "Hebrew": "he",
         "Italian": "it",
         "Japanese": "ja",
         "Korean": "ko",
         "Malay": "ms",
         "Russian": "ru",
+        "Spanish": "es",
         "Swedish": "sv",
+        "Tagalog": "tl",
         "Tamil": "ta",
         "Thai": "th",
         "Vietnamese": "vi"
@@ -337,7 +338,7 @@ UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     func showResult() {
         self.textView.text = self.resultsText
         // Toast converted from what language to what language
-        self.showOCRToast(titleText: "Great!", descriptionText: "You translated from " + self.langToLang, imageName: "translator.png")
+        self.showOCRToast(titleText: "Great!", descriptionText: "You translated from " + self.langToLang + ".", imageName: "translator.png")
     }
     
     
