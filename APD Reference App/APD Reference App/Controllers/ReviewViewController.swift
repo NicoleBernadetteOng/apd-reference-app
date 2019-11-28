@@ -12,9 +12,9 @@ import SwiftSoup
 import Reductio
 import MessageUI
 import WebKit
-//import CropViewController
+import CropViewController
 
-class ReviewViewController: UIViewController, UIImagePickerControllerDelegate,
+class ReviewViewController: UIViewController, CropViewControllerDelegate, UIImagePickerControllerDelegate,
 UINavigationControllerDelegate, WKNavigationDelegate, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
@@ -22,6 +22,11 @@ UINavigationControllerDelegate, WKNavigationDelegate, MFMailComposeViewControlle
     @IBOutlet weak var cameraImg: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
     let imagePicker = UIImagePickerController()
+    
+    private var image: UIImage?
+    private var croppingStyle = CropViewCroppingStyle.default
+    private var croppedRect = CGRect.zero
+    private var croppedAngle = 0
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var scanBtn: UIButton!
@@ -66,6 +71,30 @@ UINavigationControllerDelegate, WKNavigationDelegate, MFMailComposeViewControlle
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShowReview), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHideReview), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        // For cropViewController
+        imageView.contentMode = .scaleAspectFit
+        if #available(iOS 11.0, *) {
+            imageView.accessibilityIgnoresInvertColors = true
+        }
+        view.addSubview(imageView)
+                
+        let tapRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(didTapImageView))
+        imageView.addGestureRecognizer(tapRecognizer)
+        
+        // For adjusting view when keyboard is shown
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func getTopMostViewController() -> UIViewController? {
+        var topMostViewController = UIApplication.shared.keyWindow?.rootViewController
+
+        while let presentedViewController = topMostViewController?.presentedViewController {
+            topMostViewController = presentedViewController
+        }
+
+        return topMostViewController
     }
     
     
@@ -100,7 +129,6 @@ UINavigationControllerDelegate, WKNavigationDelegate, MFMailComposeViewControlle
     func openCamera() {
         if(UIImagePickerController .isSourceTypeAvailable(UIImagePickerController.SourceType.camera)) {
             imagePicker.sourceType = UIImagePickerController.SourceType.camera
-            imagePicker.allowsEditing = false
             self.present(imagePicker, animated: true, completion: nil)
         } else {
             let alert = UIAlertController(title:"Error", message: "Unable to access camera", preferredStyle: .alert)
@@ -117,23 +145,81 @@ UINavigationControllerDelegate, WKNavigationDelegate, MFMailComposeViewControlle
     }
     
     
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         
         let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
-        cameraImg.isHidden = true
+//        cameraImg.isHidden = true
+//
+//        imageView.contentMode = .scaleAspectFit
+//        imageView.image = pickedImage
+//        self.dismiss(animated: true, completion: nil)
+//
+//        // - 'Automatically' start the OCR
+//        detectDoiText(image: imageView.image)
+//        self.view.bringSubviewToFront(self.scanBtn)
         
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = pickedImage
-        self.dismiss(animated: true, completion: nil)
+        // Crop the image
+        let cropViewController = CropViewController(image: pickedImage)
+        cropViewController.delegate = self
         
-        // - 'Automatically' start the OCR
-        detectDoiText(image: imageView.image)
-        self.view.bringSubviewToFront(self.scanBtn)
+        DispatchQueue.main.async {
+            self.getTopMostViewController()?.present(cropViewController, animated: true, completion: nil)
+        }
+            
+        present(cropViewController, animated: true, completion: nil)
+    }
+    
+    // MARK: - Crop
+    // Runs after selecting the image from gallery
+    public func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+        print("didCropToImage")
+        
+        self.croppedRect = cropRect
+        self.croppedAngle = angle
+        updateImageViewWithImage(image, fromCropViewController: cropViewController)
     }
     
     
+    public func updateImageViewWithImage(_ image: UIImage, fromCropViewController cropViewController: CropViewController) {
+        print("updateImageViewWithImage")
+        
+        self.view.bringSubviewToFront(scanBtn)
+        self.cameraImg.isHidden = true
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        
+        cropViewController.dismissAnimatedFrom(self, withCroppedImage: image,
+                                               toView: imageView,
+                                               toFrame: CGRect.zero,
+                                               setup: { self.imageView.contentMode = .scaleAspectFit },
+                                               completion: {
+                                                // - 'Automatically' start the OCR
+                                                self.detectDoiText(image: self.imageView.image)
+                                                self.imageView.isUserInteractionEnabled = false
+                                                self.textView.isHidden = false })
+    }
+    
+    
+    @objc public func didTapImageView() {
+        // When tapping the image view, restore the image to the previous cropping state
+        print("didTapImageView")
+        
+        let viewFrame = view.convert(imageView.frame, to: navigationController!.view)
+        let cropViewController = CropViewController(croppingStyle: self.croppingStyle, image: self.image!)
+        cropViewController.delegate = self
+        cropViewController.presentAnimatedFrom(self,
+                                               fromImage: self.imageView.image,
+                                               fromView: nil,
+                                               fromFrame: viewFrame,
+                                               angle: self.croppedAngle,
+                                               toImageFrame: self.croppedRect,
+                                               setup: { self.imageView.isHidden = true },
+                                               completion: nil)
+    }
+    
+    
+    // MARK: - OCR
     // Text recognizer process function
     private func process(_ visionImage: VisionImage, with textRecognizer: VisionTextRecognizer?) {
         textRecognizer?.process(visionImage) { text, error in

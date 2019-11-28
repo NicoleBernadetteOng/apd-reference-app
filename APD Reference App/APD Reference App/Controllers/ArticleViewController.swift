@@ -2,7 +2,7 @@
 //  ArticleViewController.swift
 //  Citation Companion
 //
-//  Created by Megan Ong Kailing on 10/10/19.
+//  Created by Nicole Ong on 10/10/19.
 //  Copyright © 2019 Nicole Bernadette Ong. All rights reserved.
 //
 
