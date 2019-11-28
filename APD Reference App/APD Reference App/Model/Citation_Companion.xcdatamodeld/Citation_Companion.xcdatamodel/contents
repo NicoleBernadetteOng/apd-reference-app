@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18E2035" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="History" representedClassName=".History" syncable="YES" codeGenerationType="class">
+        <attribute name="authors" attributeType="String"/>
+        <attribute name="summary" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="url" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="History" positionX="-63" positionY="-18" width="128" height="103"/>
+    </elements>
+</model>
