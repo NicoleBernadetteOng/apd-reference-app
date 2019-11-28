@@ -51,7 +51,7 @@
             <objects>
                 <viewController id="LE1-xA-rKz" customClass="HomeViewController" customModule="APD_Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VJp-1c-bjX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yTe-Be-an8">
@@ -255,8 +255,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-db-FhQ">
-                                                    <rect key="frame" x="15" y="11" width="345" height="148"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-db-FhQ">
+                                                    <rect key="frame" x="20" y="11" width="374" height="148"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -267,7 +267,7 @@
                                                 <constraint firstItem="IM6-db-FhQ" firstAttribute="bottom" secondItem="gEe-2Z-J9P" secondAttribute="bottomMargin" id="5Ac-fu-KmF"/>
                                                 <constraint firstItem="IM6-db-FhQ" firstAttribute="centerY" secondItem="gEe-2Z-J9P" secondAttribute="centerY" id="CmY-3U-PyI"/>
                                                 <constraint firstItem="IM6-db-FhQ" firstAttribute="centerX" secondItem="gEe-2Z-J9P" secondAttribute="centerX" id="YTH-WP-BJj"/>
-                                                <constraint firstItem="IM6-db-FhQ" firstAttribute="leading" secondItem="gEe-2Z-J9P" secondAttribute="leadingMargin" constant="-1" id="ayZ-0n-nkP"/>
+                                                <constraint firstItem="IM6-db-FhQ" firstAttribute="leading" secondItem="gEe-2Z-J9P" secondAttribute="leadingMargin" id="ayZ-0n-nkP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -2118,17 +2118,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEr-YM-9Te">
-                                                    <rect key="frame" x="22" y="15" width="351" height="90"/>
+                                                    <rect key="frame" x="20" y="11" width="356" height="98"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="hEr-YM-9Te" secondAttribute="bottom" constant="4" id="0iM-ZE-PHV"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="hEr-YM-9Te" secondAttribute="trailing" constant="3" id="AYC-d3-dFe"/>
-                                                <constraint firstItem="hEr-YM-9Te" firstAttribute="leading" secondItem="V0C-ev-8uq" secondAttribute="leadingMargin" constant="2" id="RCh-7z-kBu"/>
-                                                <constraint firstItem="hEr-YM-9Te" firstAttribute="top" secondItem="V0C-ev-8uq" secondAttribute="topMargin" constant="4" id="j3M-Me-zjh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hEr-YM-9Te" secondAttribute="bottom" id="0iM-ZE-PHV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hEr-YM-9Te" secondAttribute="trailing" id="AYC-d3-dFe"/>
+                                                <constraint firstItem="hEr-YM-9Te" firstAttribute="leading" secondItem="V0C-ev-8uq" secondAttribute="leadingMargin" id="RCh-7z-kBu"/>
+                                                <constraint firstItem="hEr-YM-9Te" firstAttribute="top" secondItem="V0C-ev-8uq" secondAttribute="topMargin" id="j3M-Me-zjh"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -2397,13 +2397,13 @@
         <image name="titles" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XYx-iy-4Dj"/>
+        <segue reference="DoS-ou-0Gq"/>
         <segue reference="7KR-FX-jtO"/>
         <segue reference="WZx-Ou-3pF"/>
         <segue reference="avM-cB-QqV"/>
         <segue reference="80h-TP-zPy"/>
-        <segue reference="Q2w-ZW-k5H"/>
+        <segue reference="f2r-dC-dxt"/>
         <segue reference="A3M-8N-7v9"/>
-        <segue reference="3jJ-vY-Gij"/>
+        <segue reference="20G-SG-9e4"/>
     </inferredMetricsTieBreakers>
 </document>

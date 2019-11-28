@@ -90,8 +90,12 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "citeCell", for: indexPath) as! CiteTableViewCell
-        cell.citeLabel?.numberOfLines = 0
         cell.citeLabel?.text = citeList[indexPath.row]
+        
+        cell.citeLabel.lineBreakMode = .byWordWrapping
+        cell.citeLabel.numberOfLines = 0
+        cell.citeLabel.sizeToFit()
+
         return cell
     }
     
