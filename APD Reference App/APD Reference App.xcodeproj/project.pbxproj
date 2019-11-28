@@ -27,6 +27,7 @@
 		56971306237142E400CE73A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56971305237142E400CE73A6 /* HomeViewController.swift */; };
 		569713082372C9E300CE73A6 /* EnterDOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569713072372C9E300CE73A6 /* EnterDOIViewController.swift */; };
 		5697130A2372CF7F00CE73A6 /* EnterTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569713092372CF7F00CE73A6 /* EnterTitleViewController.swift */; };
+		56B26C83238F544400F8B49A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56B26C82238F544400F8B49A /* GoogleService-Info.plist */; };
 		56E972682375338900D9D4C2 /* NotepadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E972672375338900D9D4C2 /* NotepadViewController.swift */; };
 		56E9726A23755A5400D9D4C2 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E9726923755A5400D9D4C2 /* TutorialViewController.swift */; };
 		56F7703223619E6B00C28CDB /* RelatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F7703123619E6B00C28CDB /* RelatedViewController.swift */; };
@@ -58,6 +59,7 @@
 		56971305237142E400CE73A6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		569713072372C9E300CE73A6 /* EnterDOIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterDOIViewController.swift; sourceTree = "<group>"; };
 		569713092372CF7F00CE73A6 /* EnterTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterTitleViewController.swift; sourceTree = "<group>"; };
+		56B26C82238F544400F8B49A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		56E972672375338900D9D4C2 /* NotepadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotepadViewController.swift; sourceTree = "<group>"; };
 		56E9726923755A5400D9D4C2 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		56F7703123619E6B00C28CDB /* RelatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				2B3C68CA2346C41C004B5363 /* AppDelegate.swift */,
 				2BDBB36E2347303B00F6D790 /* UIUtilities.swift */,
 				2B3C68D92346C41E004B5363 /* Info.plist */,
+				56B26C82238F544400F8B49A /* GoogleService-Info.plist */,
 			);
 			path = "APD Reference App";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			files = (
 				2B3C68D82346C41E004B5363 /* LaunchScreen.storyboard in Resources */,
 				563290492373B86100D68EA7 /* Header.xib in Resources */,
+				56B26C83238F544400F8B49A /* GoogleService-Info.plist in Resources */,
 				2B3C68D52346C41E004B5363 /* Assets.xcassets in Resources */,
 				2B3C68D02346C41D004B5363 /* Main.storyboard in Resources */,
 			);
@@ -474,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S84AS92T36;
-				INFOPLIST_FILE = "Citation Companion/Info.plist";
+				INFOPLIST_FILE = "APD Reference App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,7 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S84AS92T36;
-				INFOPLIST_FILE = "Citation Companion/Info.plist";
+				INFOPLIST_FILE = "APD Reference App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
