@@ -297,14 +297,14 @@ UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
         var request = URLRequest(url: reqUrl)
         request.httpMethod = "POST"
 
-        let key:String = "trnsl.1.1.20190822T064247Z.c606bd27994bdc90.405f1c0864de8bb881358a57e5346c513f511437"
+        let key:String = // "insert key here"
         let lang:String = self.language
         let text:String = textView.text
         let body:String = "key=" + key + "&lang=" + lang + "&text=" + text
         let data:Data = NSMutableData(data: body.data(using: String.Encoding.utf8)!) as Data
         
         let host:String = "YandexTranslatezakutynskyV1.p.rapidapi.com"
-        let apiKey:String = "133c9a3831msh63cfab2f18410b1p1b554ejsn3d773efa07c9"
+        let apiKey:String = // "insert api key here"
         let content:String = "application/x-www-form-urlencoded"
         
         request.httpBody = data
